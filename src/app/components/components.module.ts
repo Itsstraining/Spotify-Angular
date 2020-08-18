@@ -10,6 +10,11 @@ import { PremiumComponent } from './premium/premium.component';
   declarations: [NavBarComponent, FooterComponent, PremiumComponent],
   imports: [
     CommonModule
+  ],
+  exports:[
+    NavBarComponent,
+    FooterComponent,
+    PremiumComponent
   ]
 })
 export class ComponentsModule { }
