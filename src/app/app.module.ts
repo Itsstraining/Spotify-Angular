@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,10 +8,16 @@ import { LoginModule } from './pages/login/login.module';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
-
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {HomeModule} from './pages/home/home.module';
+import {ListMusicModule} from './pages/list-music/list-music.module';
+ import { from } from 'rxjs';
+import { HomeComponent } from './pages/home/home.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MusicListComponent } from './components/music-list/music-list.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,MusicListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +27,14 @@ import { environment } from 'src/environments/environment';
     LoginModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    
+    CarouselModule,
   ],
+  exports:[
+    NavBarComponent
+
+
+  ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
