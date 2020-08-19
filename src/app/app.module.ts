@@ -9,15 +9,11 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import {HomeModule} from './pages/home/home.module';
-import {ListMusicModule} from './pages/list-music/list-music.module';
- import { from } from 'rxjs';
-import { HomeComponent } from './pages/home/home.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { MusicListComponent } from './components/music-list/music-list.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent,MusicListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +23,6 @@ import { MusicListComponent } from './components/music-list/music-list.component
     LoginModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    CarouselModule,
   ],
   exports:[
     NavBarComponent
