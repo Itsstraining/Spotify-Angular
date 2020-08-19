@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: 'Login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
   { path: 'Home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
-  { path: 'listMusic', loadChildren: () => import('./pages/list-music/list-music.module').then(m => m.ListMusicModule) }
+  { path: 'musicList', loadChildren: () => import('./components/music-list/music-list.module').then(m => m.MusicListModule) }
   ];
 
 @NgModule({

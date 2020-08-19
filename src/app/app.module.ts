@@ -6,6 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {HomeModule} from './pages/home/home.module';
+import {ListMusicModule} from './pages/list-music/list-music.module';
+ import { from } from 'rxjs';
+import { HomeComponent } from './pages/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +22,12 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentsModule,
+
   ],
   exports:[
     NavBarComponent
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
