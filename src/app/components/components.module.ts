@@ -13,6 +13,9 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [NavBarComponent, FooterComponent, PremiumComponent],
   imports: [
     CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports:[
     NavBarComponent,
