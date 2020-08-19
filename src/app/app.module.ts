@@ -12,11 +12,11 @@ import {ListMusicModule} from './pages/list-music/list-music.module';
 import { HomeComponent } from './pages/home/home.component';
 
 
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { MusicListComponent } from './components/music-list/music-list.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent,MusicListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,6 @@ import { MusicListComponent } from './components/music-list/music-list.component
     BrowserAnimationsModule,
     ComponentsModule,
     LoginModule,
-    CarouselModule,
    
 
   ],

@@ -8,11 +8,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MusicListComponent } from './music-list/music-list.component';
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, PremiumComponent],
+  declarations: [NavBarComponent, FooterComponent, PremiumComponent,MusicListComponent],
   imports: [
     CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    CarouselModule
   ],
   exports:[
     NavBarComponent,
