@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { LoginModule } from './pages/login/login.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    LoginModule
+    LoginModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
