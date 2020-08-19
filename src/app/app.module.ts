@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
+
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
+
+import { HomeComponent } from './pages/home/home.component';
+
+
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -20,10 +26,16 @@ import { environment } from 'src/environments/environment';
     BrowserAnimationsModule,
     ComponentsModule,
     LoginModule,
+
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    
+    CarouselModule,
+   
+
   ],
+  exports:[
+  ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

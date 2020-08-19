@@ -30,7 +30,7 @@
                                     <button id='login' mat-raised-button color="primary" style="width: 308px;margin-right: 80px;font-size:large;color:black">Đăng nhập</button>
                         <br>
                         <div style="margin-top: 15px;"><h2><strong style="margin-left: 133px;">Hoặc</strong></h2>  </div> 
-                        <button mat-raised-button id='google' style="width: 310px;font-size:large"><img id='logogg' src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
+                        <button mat-raised-button id='google' style="width: 310px;font-size:large" *ngIf="authService.user == null" (click)='authService.logingg()'><img id='logogg' src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
                         <h3 id='dangki' >Nếu bạn chưa có tài khoản -><button style="font-size: large;" mat-button (click)="openDialog()">Đăng kí</button></h3> 
                     </div>
                     </form>
