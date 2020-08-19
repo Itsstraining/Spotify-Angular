@@ -21,7 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
     NavBarComponent,
     FooterComponent,
     PremiumComponent,
-  
+    
   ]
 })
 export class ComponentsModule { }

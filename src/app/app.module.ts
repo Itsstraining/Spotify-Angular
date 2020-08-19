@@ -12,20 +12,25 @@ import {ListMusicModule} from './pages/list-music/list-music.module';
 import { HomeComponent } from './pages/home/home.component';
 
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MusicListComponent } from './components/music-list/music-list.component';
 @NgModule({
   declarations: [
-    AppComponent,
-  
+    AppComponent,MusicListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentsModule,
+    LoginModule,
+    CarouselModule,
+   
 
   ],
   exports:[
     NavBarComponent
+
   ],
   
   providers: [],
