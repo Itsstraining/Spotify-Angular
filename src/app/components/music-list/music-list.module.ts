@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { MusicListRoutingModule } from './music-list-routing.module';
 import { MusicListComponent } from './music-list.component';
 
+
 import{ComponentsModule} from '../components.module'
 @NgModule({
-  declarations: [MusicListComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MusicListRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ]
 })
 export class MusicListModule { }

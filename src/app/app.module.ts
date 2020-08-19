@@ -7,16 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
 
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MusicListComponent } from './components/music-list/music-list.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,MusicListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    LoginModule
+    LoginModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
