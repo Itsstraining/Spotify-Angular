@@ -5,13 +5,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth'
+import { environment } from 'src/environments/environment';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import {HomeModule} from './pages/home/home.module';
-import {ListMusicModule} from './pages/list-music/list-music.module';
- import { from } from 'rxjs';
-import { HomeComponent } from './pages/home/home.component';
-
-
 
 
 @NgModule({
@@ -24,11 +21,12 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     ComponentsModule,
     LoginModule,
-   
-
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
   ],
   exports:[
     NavBarComponent
+
 
   ],
   
