@@ -26,7 +26,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserAnimationsModule,
     ComponentsModule,
     LoginModule,
-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     CarouselModule,
