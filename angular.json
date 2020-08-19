@@ -127,6 +127,7 @@
   },
   "defaultProject": "Spotify-Angular",
   "cli": {
+
     "analytics": "f67d2420-a490-4f0b-9b0e-aa2f12c3823e"
   }
 }
