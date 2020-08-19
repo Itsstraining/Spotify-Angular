@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{FormControl,FormGroup, Validators} from '@angular/forms'
 import {MatDialog} from '@angular/material/dialog'
 import {SingUpComponent} from '../sing-up/sing-up.component'
+import {AuthService} from '../../../services/auth.service'
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -13,7 +14,7 @@ export class SignInComponent implements OnInit {
     emailControl : new FormControl('',Validators.email),
     passwordControl : new FormControl('',Validators.required),
   })
-  constructor(public dialog:MatDialog) { }
+  constructor(public dialog:MatDialog,public authService:AuthService) { }
 
   ngOnInit(): void {
   }
