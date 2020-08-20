@@ -10,9 +10,11 @@ import {MatIconModule} from '@angular/material/icon';
 import { MusicListComponent } from './music-list/music-list.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MainPageComponent } from '../pages/main-page/main-page.component';
+
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, PremiumComponent,MusicListComponent],
+  declarations: [NavBarComponent, FooterComponent, PremiumComponent,MusicListComponent,MainPageComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -24,7 +26,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     NavBarComponent,
     FooterComponent,
     PremiumComponent,
-    MusicListComponent
+    MusicListComponent,
+    MainPageComponent
   ]
 })
 export class ComponentsModule { }
