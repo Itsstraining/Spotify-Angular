@@ -1,36 +1,55 @@
+<div style="width: 800px;">
 <h2 mat-dialog-title>Đăng ký</h2>
 <mat-dialog-content class="mat-typography">
-        <div>Tên tài khoản:</div>
-        <mat-form-field appearance="fill">
+        <h4>Tên tài khoản:</h4>
+        <mat-form-field appearance="fill" style="width: 360px;">
           <mat-label>Fill form field</mat-label>
           <input matInput placeholder="Placeholder">
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           <mat-hint>Hint</mat-hint>
         </mat-form-field>
     <div class="example-container">
-        <div>Email:</div>
-        <mat-form-field appearance="fill">
+        <h4>Email:</h4>
+        <mat-form-field appearance="fill" style="width: 360px;">
         <mat-label>Enter your email</mat-label>
         <input matInput placeholder="pat@example.com" [formControl]="email" required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
     </div>
-    <div>Mật khẩu:</div>
-        <mat-form-field appearance="fill">
-          <mat-label>Fill form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
+    <h4>Mật khẩu:</h4>
+        <mat-form-field appearance="fill" style="width: 360px;">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
         </mat-form-field>
-        <div>Nhập lại mật khẩu:</div>
-        <mat-form-field appearance="fill">
-          <mat-label>Fill form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>   
-</mat-dialog-content>
+         <h4>Nhập lại mật khẩu:</h4>
+        <mat-form-field appearance="fill" style="width: 360px;">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>  
+         <h4>Date of birth:</h4>
+         <mat-form-field appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field> <br>
+        <div style="font-size: large;" >
+        <input  type="checkbox" id="remember-me" name="name" value="Tôi đồng ý với Điều khoản và điều kiện sử dụng của Grenny">
+        <label for="remember-me" style="margin-right: 5px;">Tôi đồng ý với</label>
+        <label for="remember-me"><a routerLink="#"> Điều khoản và điều kiện sử dụng</a></label>
+        <label for="remember-me" style="margin-right: 5px;margin-left: 5px;"> và </label>
+        <label for="remember-me"><a routerLink="#"> Chính sách quyền riêng tư </a></label>
+        <label for="remember-me"> của Grenny </label>
+      </div>
+</mat-dialog-content> 
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Sumit</button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>Sumit</button>
 </mat-dialog-actions>
+</div>

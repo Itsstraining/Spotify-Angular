@@ -1,0 +1,113 @@
+
+
+.format {
+    opacity: 0.7;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#homepage {
+    background-color: black;
+    z-index: 100;
+    top: 0;
+}
+
+
+/*Carousel*/
+s
+
+/*Video*/
+
+.container .music-list .music-img img {
+    height: 500px;
+    box-shadow: 15px -1px 19px 0px rgb(0, 0, 0, 0.9);
+}
+
+.container .music-list .music-detail {
+    text-align: center;
+}
+
+.container .music-list .music-detail h5 {
+    opacity: 0.5;
+}
+
+.container .music-list .music-play-list {
+    width: 600px;
+    height: 500px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.container .music-list .music-img {
+    position: relative;
+}
+
+.container .music-list .music-img .music-audio {
+    position: absolute;
+    opacity: 0.7;
+    left: 125px;
+    bottom: 10px;
+}
+
+.container .music-list .music-play-list .music-play-list-number {
+    font-family: inherit;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #efeaeabd;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon .fa-play:active {
+    color: #007bff;
+}
+
+.container .music-list .music-play-list .music-play-list-number .song-icon .fa-pause:active {
+    color: rgb(216, 16, 16);
+}
+
+
+/*Albums*/
+
+.container .col-md-4 img {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 400px;
+    position: relative;
+}
+
+.container .col-md-4:hover .album-content {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(100px);
+}
+
+.container .col-md-4:hover .album-content a {
+    color: black;
+}
+
+.container .col-md-4:hover img {
+    opacity: 0.7;
+}
+
+.container .col-md-4 .album-content {
+    opacity: 0;
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+

@@ -3,6 +3,7 @@ import{FormControl,FormGroup, Validators} from '@angular/forms'
 import {MatDialog} from '@angular/material/dialog'
 import {SingUpComponent} from '../sing-up/sing-up.component'
 import {AuthService} from '../../../services/auth.service'
+import { Width } from 'ngx-owl-carousel-o/lib/services/carousel.service';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
