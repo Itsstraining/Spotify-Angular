@@ -29,7 +29,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AngularFireAuthModule,
     CarouselModule,
     HomeModule,
-    MainPageModule,
 
   ],
   exports: [
