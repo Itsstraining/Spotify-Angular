@@ -1,42 +1,55 @@
 
-                    <!-- <body class='nen' style="background-image: url(../../../../assets/img/ThinkstockPhotos-500454346.jpg);"> -->
-                    
-                    <a routerLink='' style="margin-left: 600px;">
-                        <img class="logo" src="../../../../assets/img/nền đen.png" alt="logo" width="20%" />
-                    </a>
-                    <form [formGroup]="nameGroup" (ngSubmit)='onSubmit()'>
-                    <div id='main'>
-                    <h1>Để tiếp tục, hãy đăng nhập vào Grenny.</h1>      
-                    <div class="example-container" >
-                        <mat-form-field appearance="fill" style="width: 300px;">
-                          <mat-label>Enter your email</mat-label>
-                          <input matInput placeholder="pat@example.com" [formControl]="email" required>
-                          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                        </mat-form-field>
-                    <br>
-                        <mat-form-field appearance="fill" style="width: 301px;">
-                            <mat-label>Enter your password</mat-label>
-                            <input matInput [type]="hide ? 'password' : 'text'">
-                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                            </button>
-                          </mat-form-field>
-                    </div>
-                        <input type="checkbox" id="remember-me" name="Nhớ mật Khẩu" value="Nhớ mật khẩu">
-                        <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br>                                              
-                                <a class="forgot" routerLink='' style="font-size:15px;display: flex;
-                                justify-content: flex-end;margin-right: 94px; ">Quên Mật Khẩu ?
-                                </a>               
-                                    <button id='login' mat-raised-button color="primary" style="width: 308px;margin-right: 80px;font-size:large;color:black;outline:none;">Đăng nhập</button>
-                        <br>
-                        <div style="margin-top: 15px;"><h2 style="margin-left: 133px;"> Hoặc</h2>  </div> 
-                        <button mat-raised-button id='google' style="width: 310px;font-size:large;outline:none;" *ngIf="authService.user == null" (click)='authService.logingg()'><img id='logogg' src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
-                        <h3 id='dangki' >Nếu bạn chưa có tài khoản -><button style="font-size: large;outline:none;" mat-button (click)="openDialog()">Đăng kí</button></h3> 
-                    </div>
-                    </form>
-                    <div id='footer' style="color:black; font-size: 1.25em;"> <br> Nếu bạn nhấp vào "Đăng nhập bằng Facebook" và không phải là người dùng Grenny, bạn sẽ phải đăng ký và chấp thuận
-                        <a routerLink='' target="_blank">các Điều khoản & Điều kiện</a><br> và
-                        <a routerLink='' target="_blank"> Chính sách Quyền riêng tư của Grenny.</a>
-                    </div>
-                     
-                    <!-- </body> -->
+<a routerLink='' style="display:flex;justify-content: center;">
+    <img class="logo" src="../../../../assets/img/nền đen.png" alt="logo" width="20%" />
+</a>
+<div class="container">
+   
+    <form class="main1" [formGroup]="nameGroup" (ngSubmit)='onSubmit()'>
+        <div id='main'>
+            <h1>Để tiếp tục, hãy đăng nhập vào Grenny.</h1>
+            <div class="example-container">
+                <mat-form-field appearance="fill" style="width: 300px;">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill" style="width: 301px;">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+            <input type="checkbox" id="remember-me" name="Nhớ mật Khẩu" value="Nhớ mật khẩu">
+            <label class="checkbox" for="remember-me"> Nhớ mật khẩu</label><br>
+            <a class="forgot" routerLink='' style="font-size:15px;display: flex;
+                justify-content: flex-end;margin-right: 94px; ">Quên Mật Khẩu ?
+            </a>
+            <button id='login' mat-raised-button color="primary"
+                style="width: 308px;margin-right: 80px;font-size:large;color:black;outline:none;">Đăng nhập</button>
+            <br>
+            <div style="margin-top: 15px;">
+                <h2 style="margin-left: 133px;"> Hoặc</h2>
+            </div>
+            <button mat-raised-button id='google' style="width: 310px;font-size:large;outline:none;"
+                *ngIf="authService.user == null" (click)='authService.logingg()'><img id='logogg'
+                    src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
+            <h3 id='dangki'>Nếu bạn chưa có tài khoản -><button style="font-size: large;outline:none;" mat-button
+                    (click)="openDialog()">Đăng kí</button></h3>
+        </div>
+        
+        <footer id='footer' style="color:black; font-size: 1.25em;"> <br> Nếu bạn nhấp vào "Đăng nhập bằng Facebook" và không
+            phải là người dùng Grenny, bạn sẽ phải đăng ký và chấp thuận
+            <a routerLink='' target="_blank">các Điều khoản & Điều kiện</a><br> và
+            <a routerLink='' target="_blank"> Chính sách Quyền riêng tư của Grenny.</a>
+        </footer>
+    </form>
+</div>
+
+
+
+
+
