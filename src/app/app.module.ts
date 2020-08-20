@@ -15,6 +15,7 @@ import { HomeModule } from './pages/home/home.module';
 import{MainPageModule} from '../app/pages/main-page/main-page.module'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+
 @NgModule({
   declarations: [
     AppComponent
