@@ -7,17 +7,13 @@
     text-align: right;
   }
   
-  input.example-right-align::-webkit-outer-spin-button,
-  input.example-right-align::-webkit-inner-spin-button {
-    display: none;
-  }
-  
+ 
   input.example-right-align {
     -moz-appearance: textfield;
   }
   form{
     position: absolute;
-    margin-left: 500px;
+    
     width: 500px;
     height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,10 +38,9 @@
   #login{
     background-color: #8bc34a;
   }
-  #footer{
-    margin-top: 520px;
-    margin-left: 200px;
-    width: 10000px;
+  footer{
+    
+    width: 100%;
   }
   #dangki{
     margin-top: 25px;
@@ -54,4 +49,8 @@
 #main{
   margin-top: 20px;
   margin-left: 100px;
+}
+.container{
+  display: flex;
+  justify-content: center;
 }

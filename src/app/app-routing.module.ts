@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: 'musicList', loadChildren: () => import('./components/music-list/music-list.module').then(m => m.MusicListModule) },
   { path: ' ', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: 'mainpage', loadChildren: () => import('./pages/main-page/main-page.module').then(m => m.MainPageModule) },
-
   ];
 
 @NgModule({
