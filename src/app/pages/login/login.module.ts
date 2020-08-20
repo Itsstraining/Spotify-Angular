@@ -11,6 +11,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ComponentsModule } from 'src/app/components/components.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [LoginComponent, SignInComponent, SingUpComponent],
@@ -22,7 +25,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    ComponentsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    
   ],
   exports:[
     SignInComponent
