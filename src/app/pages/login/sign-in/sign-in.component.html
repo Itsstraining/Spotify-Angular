@@ -27,11 +27,11 @@
                                 <a class="forgot" routerLink='' style="font-size:15px;display: flex;
                                 justify-content: flex-end;margin-right: 94px; ">Quên Mật Khẩu ?
                                 </a>               
-                                    <button id='login' mat-raised-button color="primary" style="width: 308px;margin-right: 80px;font-size:large;color:black">Đăng nhập</button>
+                                    <button id='login' mat-raised-button color="primary" style="width: 308px;margin-right: 80px;font-size:large;color:black;outline:none;">Đăng nhập</button>
                         <br>
-                        <div style="margin-top: 15px;"><h2><strong style="margin-left: 133px;">Hoặc</strong></h2>  </div> 
-                        <button mat-raised-button id='google' style="width: 310px;font-size:large" *ngIf="authService.user == null" (click)='authService.logingg()'><img id='logogg' src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
-                        <h3 id='dangki' >Nếu bạn chưa có tài khoản -><button style="font-size: large;" mat-button (click)="openDialog()">Đăng kí</button></h3> 
+                        <div style="margin-top: 15px;"><h2 style="margin-left: 133px;"> Hoặc</h2>  </div> 
+                        <button mat-raised-button id='google' style="width: 310px;font-size:large;outline:none;" *ngIf="authService.user == null" (click)='authService.logingg()'><img id='logogg' src="../../../../assets/img/brands-and-logotypes.svg">Đăng nhập với Google</button>
+                        <h3 id='dangki' >Nếu bạn chưa có tài khoản -><button style="font-size: large;outline:none;" mat-button (click)="openDialog()">Đăng kí</button></h3> 
                     </div>
                     </form>
                     <div id='footer' style="color:black; font-size: 1.25em;"> <br> Nếu bạn nhấp vào "Đăng nhập bằng Facebook" và không phải là người dùng Grenny, bạn sẽ phải đăng ký và chấp thuận

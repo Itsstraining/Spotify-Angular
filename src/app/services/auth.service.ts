@@ -17,4 +17,9 @@ export class AuthService {
     console.error(err);
   }
   }
+  public async signout(){
+    await this.auth.signOut();
+    this.user=null;
+  }
+ 
 }
