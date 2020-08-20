@@ -14,7 +14,7 @@ export class SingUpComponent implements OnInit {
   ngOnInit(): void {
   }
   email = new FormControl('', [Validators.required, Validators.email]);
-
+  hide = true;
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
