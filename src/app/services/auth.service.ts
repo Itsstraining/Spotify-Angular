@@ -21,4 +21,5 @@ export class AuthService {
     await this.auth.signOut();
     this.user=null;
   }
+ 
 }
