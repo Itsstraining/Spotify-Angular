@@ -6,11 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/login/login.module';
 
-import {AngularFireModule} from '@angular/fire';
-import {AngularFireAuthModule} from '@angular/fire/auth'
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
-
-import { HomeComponent } from './pages/home/home.component';
+import { MainPageModule } from './pages/main-page/main-page.module'
+import { HomeModule } from './pages/home/home.module';
 
 
 
@@ -30,11 +30,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AngularFireAuthModule,
     CarouselModule,
     HomeModule,
+    MainPageModule,
 
   ],
-  exports:[
+  exports: [
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })
