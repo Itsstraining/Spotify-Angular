@@ -29,7 +29,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     CarouselModule,
-   
+    HomeModule,
 
   ],
   exports:[
