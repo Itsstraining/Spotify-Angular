@@ -15,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     CarouselModule,
-   
+    HomeModule,
 
   ],
   exports:[
