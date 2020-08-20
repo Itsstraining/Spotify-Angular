@@ -28,6 +28,7 @@ import { MusicListComponent } from './components/music-list/music-list.component
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     CarouselModule,
+    HomeModule,
   ],
   exports:[
     NavBarComponent
