@@ -10,10 +10,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
 import { environment } from 'src/environments/environment';
 import { HomeModule } from './pages/home/home.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PremiumComponent } from './components/premium/premium.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +29,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
   ],
   exports: [
+    PremiumComponent
   ],
 
   providers: [],
