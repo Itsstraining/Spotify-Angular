@@ -62,8 +62,6 @@ h3 {
 }
 
 .container .music-list .music-play-list {
-    width: 600px;
-    height: 500px;
     list-style-type: none;
     overflow: auto;
 }
@@ -137,4 +135,18 @@ h3 {
     position: absolute;
     top: 0px;
     right: 35px;
+}
+
+//Audio footer
+.audio-footer {
+    opacity: 0.8;
+    z-index: 110;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+}
+
+.audio-footer .mat-toolbar {
+    display: flex;
+    justify-content: center;
 }
