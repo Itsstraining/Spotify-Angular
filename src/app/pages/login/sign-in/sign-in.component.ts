@@ -51,7 +51,7 @@ export class SignInComponent implements OnInit {
   public async googleSignin() {
     const provider = new auth.GoogleAuthProvider();
     const credential = await this.afAuth.signInWithPopup(provider);
-    this.router.navigate(['./blog']);
+    this.router.navigate(['./home']);
     return this.authService.updateUserData(credential.user)
     .then(()=>{
       this.snackBar.open('Success!','OK',{duration:2000});
@@ -63,7 +63,7 @@ export class SignInComponent implements OnInit {
   signin() {
     this.afAuth.signInWithEmailAndPassword(this.email.value, this.password.value).then(() => {
       this.snackBar.open('Success!', 'OK', {duration: 2000});
-      this.router.navigate(['./blog']);
+      this.router.navigate(['./home']);
     }).catch((err) => {
       this.snackBar.open(err, 'OK', {duration: 2000});
     });

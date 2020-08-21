@@ -29,7 +29,7 @@ import { PremiumComponent } from './components/premium/premium.component';
 
   ],
   exports: [
-    PremiumComponent
+
   ],
 
   providers: [],
