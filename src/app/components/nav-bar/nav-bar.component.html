@@ -3,16 +3,17 @@
 
 <ng-template #guest>
     <mat-toolbar class="navBarContainer">
-        <mat-toolbar-row>
+        <mat-toolbar-row style="background-color: #2e2e2ee7; opacity: 0.7;">
             <div>
-                <img src="../../../assets/img/logo1.png" alt="" height="60px" width="60px" class="logo" style="cursor: pointer;" (click)="router.navigate(['/home'])">
+                <img src="../../../assets/logo1.png" alt="" height="60px" class="logo" style="cursor: pointer;" (click)="router.navigate(['/home'])">
+                <span style="margin-left:5px; color: white;  font-size: 25px;">Grenny</span>
             </div>
             <div class="nav-btn">
-                <button mat-button>Home</button>
-                <button mat-button>Premium</button>
-                <button mat-button>List</button>
-                <button mat-button>Plays</button>
-                <button mat-button class="btn-login" (click)="router.navigate(['Login'])">Login</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; ">Home</button>
+                <button mat-button style="color: white;  font-size: 25px; outline: none;">Premium</button>
+                <button mat-button style="color: white;  font-size: 25px; outline: none;">List</button>
+                <button mat-button style="color: white;  font-size: 25px; outline: none;">Plays</button>
+                <button mat-button style="color:white;  font-size: 25px; outline: none;" class="btn-login" (click)="router.navigate(['Login']) ">Login</button>
             </div>
 
         </mat-toolbar-row>
@@ -22,23 +23,24 @@
 <ng-template #authenticated>
     <mat-toolbar class="navBarContainer">
 
-        <mat-toolbar-row>
+        <mat-toolbar-row style="background-color: #2e2e2ee7; opacity: 0.9;">
             <div>
                 <img src="../../../assets/img/logo1.png" alt="" height="60px" width="60px" class="logo" style="cursor: pointer;" (click)="router.navigate(['/home'])">
+                <span style="margin-left:5px; color: white;  font-size: 25px;">Grenny</span>
             </div>
             <div class="nav-btn">
-                <button mat-button>Home</button>
-                <button mat-button>Premium</button>
-                <button mat-button>List</button>
-                <button mat-button>Plays</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; ">Home</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; ">Premium</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; ">List</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; ">Plays</button>
                 <span class="example-spacer"></span>
                 <button mat-button class="center" [matMenuTriggerFor]="menu"> 
-                    <img [src]='avt' style="width: 50px; border-radius: 50% ">
+                    <img [src]='avt' style="width: 50px; border-radius: 50%; outline: none; ">
                 </button>
 
             </div>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item (click)="signout()" class="signout">Sign Out</button>
+                <button mat-menu-item style="color: white; font-size: 25px; outline: none; background-color: black; opacity: 0.6;" (click)=" signout() " class="signout ">Sign Out</button>
             </mat-menu>
 
         </mat-toolbar-row>
