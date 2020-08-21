@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
+import{DataService} from '../../services/data.service'
+
+import{AudioService} from '../../services/audio.service'
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -7,9 +11,48 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  files:Array<any>=[];
+
+  currentFile: any = {};
+  constructor(public data:DataService, public audioService:AudioService) {
+    data.getFiles().subscribe(filess=>{
+      this.files= filess;
+    })
+    
+   }
 
   ngOnInit(): void {
+  }
+  playStream(url) {
+    this.audioService.playStream(url)
+    .subscribe(events => {
+      // listening for fun here
+    });
+  }
+
+  openFile(file, index) {
+    this.currentFile = { index, file };
+    this.audioService.stop();
+    this.playStream(file.url);
+  }
+
+  pause() {
+    this.audioService.pause();
+  }
+
+  play() {
+    this.audioService.play();
+  }
+  next() {
+    const index = this.currentFile.index + 1;
+    const file = this.files[index];
+    this.openFile(file, index);
+  }
+
+  previous() {
+    const index = this.currentFile.index - 1;
+    const file = this.files[index];
+    this.openFile(file, index);
   }
   customOptions: OwlOptions = {
     lazyLoad:true,
