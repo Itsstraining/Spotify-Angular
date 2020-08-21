@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+// :root {
+//     --xamnhat: rgb(245, 245, 245);
+//     --xanhmint: rgb(0, 177, 79);
+//     --cam: rgb(249, 177, 68);
+// }
+// html {
+//     /* background-color: rgb(245, 245, 245); */
+//     background-color: rgba(241, 240, 240, 0.925);
+//     color: white;
+//     font-size: 62.5%;
+//     font-family: "SFUIText", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+// }
+// body {
+//     margin: 0;
+//     background-color: rgb(245, 245, 245);
+// }
+// .premium-header span {
+//     font-size: 2.5rem;
+//     margin: .5rem;
+//     text-transform: uppercase;
+//     font-weight: 700;
+// }
+.contain1 {
+    background-image: url(../../../assets/headphones_camera_retro_122094_3840x2160.jpg);
+    height: 600px;
+    background-size: cover;
+    // background-image: none;
+    animation: amiName 10s infinite;
+    animation-name: slide;
+    // animation-duration: 10s;
+    opacity: 0.7;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../../../assets/headphones_camera_retro_122094_3840x2160.jpg);
+    }
+    25% {
+        background-image: url(../../../assets/microphone_music_amplifier_113905_1280x720.jpg);
+    }
+    50% {
+        background-image: url(../../../assets/pianos_keys_musical_instrument_120891_1280x720.jpg);
+    }
+    75% {
+        background-image: url(../../../assets/guitar_fretboard_strings_106175_1280x720.jpg);
+    }
+    100% {
+        background-image: url(../../../assets/headphones_girl_music_lover_133772_1280x720.jpg);
+    }
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin: .5rem;
+    text-transform: uppercase;
+    color: cadetblue;
+    text-align: center;
+}
+
+h2 {
+    margin: .5rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+h4 {
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+h5 {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 30px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.reason-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+// li>h6 {
+//     width: 180px;
+//     height: 135px;
+// }
+.reason-list li>p {
+    text-align: justify;
+}
+
+.reason-list li {
+    /* display: inline-block; */
+    /* padding: 20px; */
+    width: 22%;
+    list-style-type: none;
+}
+
+// li>img {
+//     width: 100%;
+// }
+// .paging {
+//     width: 90rem;
+// }
+// /* BUTTON */
+// .btnn {
+//     border: 0;
+//     border-radius: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-decoration: none;
+//     color: white !important;
+// }
+// .btnn:hover {
+//     opacity: 0.9;
+//     box-shadow: 1.5px 1.5px rgb(0, 0, 0, 0.5)
+// }
+// .btn1 {
+//     width: 20rem;
+//     background-color: var(--cam);
+//     font-size: 2.3rem;
+//     font-weight: 700;
+//     text-align: center;
+//     padding: 6px;
+// }
+// .premium-body {
+//     width: 90rem;
+// }
+// .premium-header div {
+//     justify-content: center;
+//     display: flex;
+//     align-items: center;
+// }
+// .premium-package {
+//     display: flex;
+//     justify-content: space-between;
+//     text-align: center;
+//     padding: 3rem;
+// }
+// .package-head {
+//     padding: 1.3rem;
+//     font-size: 3.7rem;
+//     font-weight: 550;
+//     text-transform: uppercase;
+// }
+// .package {
+//     width: 26rem;
+//     color: var(--xanhmint);
+//     /* height: 50rem; */
+//     height: 42rem;
+//     /* border: 4px solid rebeccapurple; */
+//     border-radius: 2rem;
+//     background-color: whitesmoke;
+// }
+// .package:hover {
+//     box-shadow: 5px 7px var(--cam);
+//     opacity: 0.9;
+// }
+// .pack {
+//     border-radius: 2rem;
+//     width: 26rem;
+//     height: 110px;
+// }
+// .pack1 {
+//     background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-6-month.svg")
+// }
+// .pack2 {
+//     background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-1-year.svg")
+// }
+// .pack3 {
+//     background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/package-2-year.svg");
+// }
+// .premium-btn {
+//     margin: 10px 0;
+//     justify-content: center;
+//     display: flex;
+// }
+// .package-price {
+//     // height: 1rem;
+//     display: flex;
+//     justify-content: space-between;
+// }
+// .price-head {
+//     font-size: 6rem;
+//     padding-left: 13px;
+//     display: inline-block;
+// }
+// .price-foot span {
+//     display: inline-block;
+//     width: 100%;
+//     vertical-align: baseline;
+// }
+// .zeronum {
+//     position: relative;
+//     top: 14px;
+//     text-align: start;
+//     font-size: 4.0rem;
+// }
+// .currency {
+//     position: relative;
+//     text-align: center;
+//     font-size: 3.7rem;
+//     bottom: 6px;
+// }
+// .why {
+//     color: black;
+// }
+// .premium-footer {
+//     margin-top: 40px;
+// }
+// .contain {
+//     justify-content: center;
+//     display: flex;
+//     padding-top: 50px;
+//     background-color: var(--xanhmint);
+// }
+// .body-container {
+//     background-color: var(--xamnhat);
+//     color: black;
+// }
+// .end {
+//     width: 100%;
+//     /* display: flex; */
+//     /* justify-content: space-between; */
+//     display: inline-block;
+// }
+// .pic>img {
+//     border-radius: 400px;
+//     box-shadow: 5px 5px rgb(251, 227, 109);
+// }
+// .download-header {
+//     height: 520px;
+//     display: flex;
+//     /* justify-content: left; */
+// }
+// .download-title {
+//     width: 40%;
+//     display: flex;
+//     text-align: justify;
+//     flex-direction: column;
+//     align-items: center;
+//     box-sizing: border-box;
+//     padding-top: 170px;
+// }
+// .icon-pc {
+//     justify-content: center;
+//     /* position: relative; */
+//     height: 512px;
+//     width: 512px;
+//     background-image: url("https://cdn3.iconfinder.com/data/icons/desktop-computer-colored/48/Desktop___Services_Artboard_5-512.png");
+// }
+// .icon-pc>img {
+//     position: relative;
+//     top: 170px;
+//     left: 225px;
+// }
+// .download-icon-app {
+//     display: flex;
+//     justify-content: center;
+//     /* align-items: center; */
+// }
+// .download-icon-app div {
+//     margin: 20px 30px;
+// }
+// .device-img {
+//     display: flex;
+//     justify-content: center;
+// }
+// .list-device li {
+//     font-size: 1.1em;
+//     font-weight: 500;
+//     padding: 0;
+//     text-decoration: underline;
+//     border-right: 2px solid black;
+//     text-align: center;
+//     display: inline-block;
+//     width: 12%;
+// }
+.premium-header {
+    position: relative;
+}
+
+// .title-premium h2 {
+//     position: absolute;
+//     left: 10%;
+// }
+.fix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
