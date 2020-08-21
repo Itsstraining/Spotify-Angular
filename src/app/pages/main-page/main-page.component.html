@@ -38,97 +38,25 @@
                             <img src="../../../assets/img-D/music_wallpaper3.jpg" alt="">
                         </div>
                         <div class="music-audio">
-                            <audio src="../../../assets/img-D/Alan_Walker.mp3" controls></audio>
+                            <audio src="../../../assets/img-D/despacito.mp3" controls></audio>
                         </div>
                     </div>
                     <div class="music-detail">
-                        <h4>Perfect Song</h4>
-                        <h5>Alone LYRICS</h5>
-                        <h3>That is the best music in 2020</h3>
+                        <h4>Despacito</h4>
+                        <h5>Daddy Yankee</h5>
+                        <h3>That is the most viewed music on youtube in the world ....</h3>
                     </div>
                 </div>
                 <!--Right-->
-                <div class="col-md-6">
-                    <ul class="music-play-list">
+                <div class="col-md-6" style="overflow:auto;height:400px">
+                    <ul class="music-play-list" style="cursor: pointer;" *ngFor="let data of files;let i = index" (click)="openFile(data, i)">
                         <li class="music-play-list-number">
                             <div class="song-infor">
 
-                                <h5>Rolling in the deep</h5>
-                                <strong>Album</strong>:Title |
-                                <strong>Type</strong>:Pop|
-                                <strong>Singer</strong>:Adele
-
-                            </div>
-                            <div class="song-icon">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                                <i class="fa fa-pause" aria-hidden="true"></i>
-                            </div>
-                        </li>
-
-                        <li class="music-play-list-number">
-                            <div class="song-infor">
-
-                                <h5>Once upon a december</h5>
-                                <strong>Album</strong>:Title |
-                                <strong>Type</strong>:Classic|
-                                <strong>Singer</strong>:Liz Callaway
-
-                            </div>
-                            <div class="song-icon">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                                <i class="fa fa-pause" aria-hidden="true"></i>
-                            </div>
-                        </li>
-                        <li class="music-play-list-number">
-                            <div class="song-infor">
-
-                                <h5>Beliver</h5>
-                                <strong>Album</strong>:Evolve |
-                                <strong>Type</strong>:Pop Rock|
-                                <strong>Singer</strong>:Kurt Hugo Schneider
-
-                            </div>
-                            <div class="song-icon">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                                <i class="fa fa-pause" aria-hidden="true"></i>
-                            </div>
-                        </li>
-                        <li class="music-play-list-number">
-                            <div class="song-infor">
-
-                                <h5>The Lazy Song</h5>
-                                <strong>Album</strong>:Doo-Wops & Hooligans |
-                                <strong>Type</strong>:Pop|
-                                <strong>Singer</strong>:Bruno Mars
-
-                            </div>
-                            <div class="song-icon">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                                <i class="fa fa-pause" aria-hidden="true"></i>
-                            </div>
-                        </li>
-                        <li class="music-play-list-number">
-                            <div class="song-infor">
-
-                                <h5>Look What You Made Me Do</h5>
-                                <strong>Album</strong>:Reputation |
-                                <strong>Type</strong>:Pop|
-                                <strong>Singer</strong>:Taylor Swift
-
-                            </div>
-                            <div class="song-icon">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                                <i class="fa fa-pause" aria-hidden="true"></i>
-                            </div>
-                        </li>
-                        <li class="music-play-list-number">
-                            <div class="song-infor">
-
-                                <h5>See You Again</h5>
-                                <strong>Album</strong>:Furious 7 |
-                                <strong>Type</strong>:Hip-hop, Pop-rap|
-                                <strong>Singer</strong>:Wiz Khalifa
-
+                                <h3>{{data.namesong}}</h3>
+                                <strong>Album</strong>:{{data.album}} |
+                                <strong>Type</strong>:{{data.type}}|
+                                <strong>Singer</strong>:{{data.singer}}
                             </div>
                             <div class="song-icon">
                                 <i class="fa fa-play" aria-hidden="true"></i>
@@ -193,5 +121,21 @@
             </div>
         </div>
     </div>
+</div>
+<div class="audio-footer">
+    <mat-toolbar color="primary">
+        <button mat-button (click)="previous()">
+            <mat-icon mat-list-icon>skip_previous</mat-icon>
+          </button>
+        <button mat-button (click)="play()">
+            <mat-icon mat-list-icon>play_circle_filled</mat-icon>
+          </button>
+        <button mat-button (click)="pause()">
+            <mat-icon mat-list-icon>pause</mat-icon>
+          </button>
+        <button mat-button (click)="next()">
+            <mat-icon mat-list-icon>skip_next</mat-icon>
+          </button>
+    </mat-toolbar>
 </div>
 <app-footer></app-footer>
