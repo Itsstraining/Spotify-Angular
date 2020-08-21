@@ -13,19 +13,28 @@
                     <div style="display:flex;justify-content:flex-end; width: 1300px;">
                         <ul class="navbar">
                             <li>
-                                <button mat-button class="example-icon favorite-icon" aria-label="Button that displays a tooltip when focused or hovered over">
+
+
+                                <button mat-button class="example-icon favorite-icon" aria-label="Button that displays a tooltip when focused or hovered over" style="outline: none;" (click)="router.navigate(['home'])">
+
                                   Home
                                  <!-- <mat-icon>house</mat-icon> -->
-                                    </button>
+                                  </button>
                             </li>
                             <li>
-                                <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with share icon">
+
+                             
+
+                                <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with share icon" style="outline: none;" >
+
                                   Premium
                                  <!-- <mat-icon>shopping_cart</mat-icon> -->
                                     </button>
                             </li>
-                            <li>
-                                <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+                                
+                                <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="outline: none;" (click)="router.navigate(['mainPage'])">
+
                                 List
                                 <!-- <mat-icon>format_list_bulleted</mat-icon> -->
                                 </button>
@@ -41,18 +50,13 @@
                                 <!-- <a class="nav-link disabled" href="#" aria-disabled="true" style="color: white;">|</a> -->
                             </li>
 
-                            <li>
-                                <button mat-button class="example-icon favorite-icon " aria-label="Example icon-button with heart icon ">
-                                Sign in
+
+                                <button mat-button class="example-icon favorite-icon " aria-label="Example icon-button with heart icon " style="outline: none;" (click)="router.navigate(['Login'])">
+                                  Login
                                 <!-- <mat-icon>call_missed</mat-icon> -->
                                 </button>
                             </li>
-                            <li>
-                                <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-                                Sign out
-                                   <!-- <mat-icon>call_missed_outgoing</mat-icon> -->
-                                </button>
-                            </li>
+
                         </ul>
                     </div>
 
