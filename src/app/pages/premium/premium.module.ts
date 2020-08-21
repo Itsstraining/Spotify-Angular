@@ -1,3 +1,4 @@
+import { ComponentsModule } from 'src/app/components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { PremiumComponent } from './premium.component';
   declarations: [PremiumComponent],
   imports: [
     CommonModule,
-    PremiumRoutingModule
+    PremiumRoutingModule,
+    ComponentsModule
   ]
 })
 export class PremiumModule { }
