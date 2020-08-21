@@ -9,7 +9,7 @@
                 <span style="margin-left:5px; color: white;  font-size: 25px;">Grenny</span>
             </div>
             <div class="nav-btn">
-                <button mat-button style="color: white; font-size: 25px; outline: none; ">Home</button>
+                <button mat-button style="color: white; font-size: 25px; outline: none; " (click)="router.navigate(['home'])">Home</button>
                 <button mat-button style="color: white;  font-size: 25px; outline: none;">Premium</button>
                 <button mat-button style="color: white;  font-size: 25px; outline: none;">List</button>
                 <button mat-button style="color: white;  font-size: 25px; outline: none;">Plays</button>
@@ -34,7 +34,7 @@
                 <button mat-button style="color: white; font-size: 25px; outline: none; ">List</button>
                 <button mat-button style="color: white; font-size: 25px; outline: none; ">Plays</button>
                 <span class="example-spacer"></span>
-                <button mat-button class="center" [matMenuTriggerFor]="menu"> 
+                <button mat-button class="center" [matMenuTriggerFor]="menu">
                     <img [src]='avt' style="width: 50px; border-radius: 50%; outline: none; ">
                 </button>
 
