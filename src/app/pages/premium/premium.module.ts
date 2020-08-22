@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { PremiumRoutingModule } from './premium-routing.module';
 import { PremiumComponent } from './premium.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { PremiumComponent } from './premium.component';
   imports: [
     CommonModule,
     PremiumRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    MatButtonModule
   ]
 })
 export class PremiumModule { }
