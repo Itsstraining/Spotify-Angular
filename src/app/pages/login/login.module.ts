@@ -15,6 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [LoginComponent, SignInComponent, SingUpComponent],
   imports: [
@@ -29,6 +32,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     ComponentsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSnackBarModule,
+    MatCheckboxModule
     
   ],
   exports:[

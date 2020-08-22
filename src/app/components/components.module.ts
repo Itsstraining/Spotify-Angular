@@ -11,6 +11,7 @@ import { MusicListComponent } from './music-list/music-list.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MainPageComponent } from '../pages/main-page/main-page.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MainPageComponent } from '../pages/main-page/main-page.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    CarouselModule 
+    CarouselModule ,
+    MatMenuModule
   ],
   exports:[
     NavBarComponent,
