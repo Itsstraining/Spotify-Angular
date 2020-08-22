@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.contain1 {
+    background-image: url(../../../assets/headphones_camera_retro_122094_3840x2160.jpg);
+    height: 600px;
+    background-size: cover;
+    // background-image: none;
+    animation: amiName 10s infinite;
+    animation-name: slide;
+    // animation-duration: 10s;
+    opacity: 0.7;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../../../assets/headphones_camera_retro_122094_3840x2160.jpg);
+    }
+    25% {
+        background-image: url(../../../assets/microphone_music_amplifier_113905_1280x720.jpg);
+    }
+    50% {
+        background-image: url(../../../assets/pianos_keys_musical_instrument_120891_1280x720.jpg);
+    }
+    75% {
+        background-image: url(../../../assets/guitar_fretboard_strings_106175_1280x720.jpg);
+    }
+    100% {
+        background-image: url(../../../assets/headphones_girl_music_lover_133772_1280x720.jpg);
+    }
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin: .5rem;
+    text-transform: uppercase;
+    color: cadetblue;
+    text-align: center;
+}
+
+h2 {
+    margin: .5rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+h4 {
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+h5 {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 30px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.reason-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.reason-list li>p {
+    text-align: justify;
+}
+
+.reason-list li {
+    width: 22%;
+    list-style-type: none;
+}
+
+
+.premium-header {
+    position: relative;
+}
+
+
+.fix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

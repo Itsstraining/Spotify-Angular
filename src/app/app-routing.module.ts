@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: 'musicList', loadChildren: () => import('./components/music-list/music-list.module').then(m => m.MusicListModule) },
   { path: 'mainPage', loadChildren: () => import('./pages/main-page/main-page.module').then(m => m.MainPageModule) },
+  { path: 'premium', loadChildren: () => import('./pages/premium/premium.module').then(m => m.PremiumModule) },
   { path: '**', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) }
 ];
 

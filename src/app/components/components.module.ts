@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
-import { PremiumComponent } from './premium/premium.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -15,7 +13,7 @@ import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, PremiumComponent,MusicListComponent,MainPageComponent],
+  declarations: [NavBarComponent, FooterComponent,MusicListComponent,MainPageComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -27,7 +25,6 @@ import {MatMenuModule} from '@angular/material/menu';
   exports:[
     NavBarComponent,
     FooterComponent,
-    PremiumComponent,
     MusicListComponent,
     MainPageComponent
   ]
