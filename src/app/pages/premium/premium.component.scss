@@ -81,7 +81,6 @@ p {
     padding: 0;
 }
 
-
 .reason-list li>p {
     text-align: justify;
 }
@@ -91,15 +90,24 @@ p {
     list-style-type: none;
 }
 
-
 .premium-header {
     position: relative;
 }
-
 
 .fix {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.example-icon {
+    font-family: 'Anton', sans-serif;
+    outline: none;
+    width: 200px;
+    height: 80px;
+    font-size: 20px;
+    margin-top: 2%;
+    background: none;
+    color: #FFFFFF;
 }
